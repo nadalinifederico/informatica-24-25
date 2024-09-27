@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 
-
 int main()
 {
     float litri,costoalL,pagare,pagamento,resto;
