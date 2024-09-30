@@ -1,0 +1,41 @@
+// Dati 3 numeri stampare il più piccolo, il più grande e la loro media aritmetica.
+
+#include <stdio.h>
+
+int main() {
+    float num1, num2, num3;
+    float massimo, minimo, media;
+
+    
+    printf("Inserisci il primo numero: ");
+    scanf("%f", &num1);
+    printf("Inserisci il secondo numero: ");
+    scanf("%f", &num2);
+    printf("Inserisci il terzo numero: ");
+    scanf("%f", &num3);
+
+   
+    massimo = num1;
+    minimo = num1;
+
+    if (num2 > massimo) {
+        massimo = num2;
+    }
+    if (num2 < minimo) {
+        minimo = num2;
+    }
+    if (num3 > massimo) {
+        massimo = num3;
+    }
+    if (num3 < minimo) {
+        minimo = num3;
+    }
+
+   
+    media = (num1 + num2 + num3) / 3;
+    printf("Il numero più piccolo è: %.2f\n", minimo);
+    printf("Il numero più grande è: %.2f\n", massimo);
+    printf("La media aritmetica è: %.2f\n", media);
+
+    return 0;
+}
