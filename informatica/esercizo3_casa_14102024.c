@@ -14,7 +14,7 @@ int main() {
     scanf("%d %d %d", &ore2, &minuti2, &secondi2);
 
     
-    if(ore1 < ore2 || ore1 == ore2 && minuti1 < minuti2 || ore1 == ore2 && minuti1 == minuti2 && secondi1 < secondi2)) {
+    if(ore1 < ore2 || ore1 == ore2 && minuti1 < minuti2 || ore1 == ore2 && minuti1 == minuti2 && secondi1 < secondi2) {
         printf("Il primo orario viene prima.\n");
     } else if (ore1 > ore2 || (ore1 == ore2 && minuti1 > minuti2 || ore1 == ore2 && minuti1 == minuti2 && secondi1 > secondi2)) {
         printf("Il secondo orario viene prima.\n");
