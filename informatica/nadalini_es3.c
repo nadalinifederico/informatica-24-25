@@ -31,7 +31,7 @@ int main(){
 
     n1=rand()%50+1;
     n2=rand()%50+1;
-    scanf("%d,%d",n1,n2);
+    printf("%d,%d",n1,n2);
 
     switch(scelta){
         case 1:
