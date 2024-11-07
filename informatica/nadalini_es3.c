@@ -39,19 +39,19 @@ int main(){
             break;
         case 2:
             if(n1<n2){
-                printf("scrivi che il primo numero è minore del primo");
+                printf("scrivi che il primo numero è minore del primo\n");
             }
             if (n1>n2){
-                printf("il secondo numero è minore del primo");
+                printf("il secondo numero è minore del primo\n");
             }
             else{
-                printf("i due numeri sono uguali");
+                printf("i due numeri sono uguali\n");
             }
             
-            printf("2. LA DIFFERENZA TRA IL MAGGIORE E IL MINORE", n1/n2);
+            printf("2. LA DIFFERENZA TRA IL MAGGIORE E IL MINORE\n", n1/n2);
             break;
         case 3:
-            printf("3. GENERATO UN VALORE K(INTERO) DETERMINARE CHI DEI VALORI SI AVVICINA DI PIÙ");
+            printf("3. GENERATO UN VALORE K(INTERO) DETERMINARE CHI DEI VALORI SI AVVICINA DI PIÙ\n");
 
     }
 

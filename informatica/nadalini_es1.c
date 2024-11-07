@@ -9,6 +9,7 @@ da 2 cifre e k compare 1 volta*/
 
 int main(){
     int k=0;
+    int cifreseparate=0;
     printf("scegli un numero:");
     scanf("%d", &k);
 
@@ -27,5 +28,6 @@ int main(){
     if(k>=1000 && k<=9999){
         printf("il numero è composto da quattro cifre");
     }
+    
     
 }
