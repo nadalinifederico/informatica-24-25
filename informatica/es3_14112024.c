@@ -6,6 +6,7 @@ si termina non appena arriva uno 0*/
 
 int main(){
     int numero;
+    int cnt=1;
 
     printf("inserici un numero:");
     scanf("%d", &numero);
@@ -14,4 +15,7 @@ int main(){
         printf("il valore inserito è: %d\n", numero);
         printf("inserici un numero:");
         scanf("%d", &numero);
+        cnt++;
     }
+    printf("hai inserito %d valori", cnt);
+}
