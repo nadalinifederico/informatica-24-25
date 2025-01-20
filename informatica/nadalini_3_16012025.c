@@ -4,20 +4,21 @@ corrisponde alla quarta posizione.*/
 #include <stdio.h>
 
 int main(){
-    int n;
-    int f=0;
-    int cnt=0;
-    int cifra=0;
-    
-    printf("Inserisci un numero: ");
-    scanf("%d", &n);
+    int n=0;
+    int cifra,pos=1,num_q;
 
-    while(n>0){
-        cifra=n%10;
-        n=n/10;
-        f++;
-        printf("La cifra %d corrisponde alla %d posizione", cifra, f);
-        cnt++;
+    do{
+        printf("inserici un valore: ");
+        scanf("%d", &n);
+    }while(n<=0);
+
+    num_q=n;
+    while(num_q!=0){
+        cifra=num_q%10;
+        num_q=num_q/10;
+        if(cifra==pos){
+            printf("\n la cifra %d corrisponde alla sua posizione %d", cifra, pos);
+        }
+        pos++;
     }
-    
 }
