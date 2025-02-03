@@ -27,4 +27,3 @@ int somma_divisori(int _n){
     }
     return 0;
 }
-
