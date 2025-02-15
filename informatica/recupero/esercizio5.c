@@ -1,4 +1,4 @@
-/*dati 2 numeri verificare se sono amicali*/
+/*dati 2 numeri verificare se sono amicali*/ 
 #include <stdio.h>
 int main(){
     int num1, num2, i, sum1=0, sum2=0;
