@@ -2,7 +2,7 @@
 #include "libArray.h"
 #include "libArray.c"
 
-#define DIM 20
+#define DIM 10
 
 int main(){
     int v1[DIM], v2[DIM], temp;
