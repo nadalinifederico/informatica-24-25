@@ -10,9 +10,11 @@
     <div class="container">
         <h1 class="main-title">Il nostro progetto con Arduino</h1>
         <p><strong>Nome del progetto:</strong> Radar con effetto in avvicinamento</p>
-        <p><strong>Descrizione:</strong> Il radar, muovendosi a destra e sinistra, rileva un oggetto a distanza variabile,
-            emette un effetto sonoro, avvia un conto alla rovescia finché l'oggetto è rilevato,
-            e ogni secondo accende un LED. Alla fine del conto, attiva la ventola.</p>
+        <p><strong>Descrizione:</strong> Il radar, muovendosi a destra e sinistra se niente è rilevato mantiene un LED di segnalazione verde,
+            può rilevare un oggetto a distanza variabile e viene segnalato con lo spegnimento del LED verde e l'accensione di uno rosso.
+            quando lo rileva a una distanza determinata, avvia un conto alla rovescia finché l'oggetto è rilevato a quella distanza determinata
+            e il LED rosso inizia a lampeggiare lentamente, velocizzando il lampeggiamento e si sincronizza ad esso l'effetto sonoro per segnalare un allarme.
+            Alla fine del conto, attiva la ventola.</p>
         <p><strong>Componenti utilizzati:</strong></p>
         <ul>
             <li>Arduino Uno</li>
