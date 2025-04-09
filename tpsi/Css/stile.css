@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: justify;
     margin: 20px;
     background-color: #e3f2fd; 
     color: #333;
@@ -9,6 +9,7 @@ h1 {
     color: #1e88e5;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 h2 {
     color: #1976d2;
@@ -17,11 +18,18 @@ h2 {
 }
 .container {
     max-width: 800px;
-    margin: auto;
     padding: 20px;
     background-color: #ffffff; 
     border-radius: 40px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.left-align {
+    text-align: left;
+}
+#ristringimento-fasi {
+    text-align: left justify;
+    margin-left: 1px;
+    margin-right: 1px; 
 }
 img {
     max-width: 100%; 
@@ -35,4 +43,14 @@ img {
 }
 .gallery img {
     width: 45%; 
+}
+#ridim-immagini {
+    width: 150px; 
+    height: auto;
+    margin-left: 10px;
+}
+#ridim-immagini li {
+    justify-content: space-between; /* Sposta il testo e l'immagine ai lati opposti */
+    align-items: center; /* Allinea verticalmente il testo e l'immagine */
+    margin-bottom: 10px; /* Aggiunge spazio tra gli elementi della lista */
 }
