@@ -52,5 +52,17 @@ img {
 #ridim-immagini li {
     justify-content: space-between; /* Sposta il testo e l'immagine ai lati opposti */
     align-items: center; /* Allinea verticalmente il testo e l'immagine */
-    margin-bottom: 10px; /* Aggiunge spazio tra gli elementi della lista */
+    margin-bottom: 1px; /* Aggiunge spazio tra gli elementi della lista */
+}
+#ridim-immagini li {
+    display: flex; /* Usa flexbox per allineare testo e immagine */
+    align-items: center; /* Allinea verticalmente il testo e l'immagine */
+    justify-content: space-between; /* Distribuisce spazio tra testo e immagine */
+    margin-bottom: 1px; /* Spazio tra gli elementi della lista */
+}
+
+#ridim-immagini img {
+    max-width: 150px; /* Limita la larghezza delle immagini */
+    height: auto; /* Mantiene le proporzioni */
+    margin-left: 450px; /* Spazio tra immagine e testo */
 }
