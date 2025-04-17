@@ -1,68 +1,97 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: justify;
-    margin: 20px;
-    background-color: #e3f2fd; 
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Imposta il font del testo */
+    line-height: 1.6; /* Altezza delle righe per migliorare la leggibilità */
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    background-color: #f4f4f9; /* Colore di sfondo della pagina */
+    color: #333; /* Colore del testo */
 }
-h1 {
-    color: #1e88e5;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-h2 {
-    color: #1976d2;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
+
 .container {
-    max-width: 800px;
-    padding: 20px;
-    background-color: #ffffff; 
-    border-radius: 40px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Larghezza massima del contenitore */
+    margin: 20px auto; /* Centra il contenitore orizzontalmente */
+    padding: 20px; /* Spazio interno del contenitore */
+    background-color: #ffffff; /* Colore di sfondo del contenitore */
+    border-radius: 10px; /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
 }
-.left-align {
-    text-align: left;
+
+.main-title {
+    text-align: center; /* Centra il titolo */
+    color: #1e88e5; /* Colore del testo */
+    font-size: 2.5em; /* Dimensione del font */
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombreggiatura del testo */
 }
-#ristringimento-fasi {
-    text-align: left justify;
-    margin-left: 1px;
-    margin-right: 1px; 
+
+p {
+    margin-bottom: 15px; /* Spazio sotto ogni paragrafo */
 }
-img {
-    max-width: 100%; 
+
+ul {
+    list-style-type: none; /* Rimuove i punti elenco */
+    padding: 0; /* Rimuove il padding interno */
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 10px;
-    margin: auto;
+
+ul li {
+    margin-bottom: 15px; /* Spazio sotto ogni elemento della lista */
 }
-.gallery img {
-    width: 45%; 
-}
-#ridim-immagini {
-    width: 150px; 
-    height: auto;
-    margin-left: 10px;
-}
+
 #ridim-immagini li {
-    justify-content: space-between; /* Sposta il testo e l'immagine ai lati opposti */
-    align-items: center; /* Allinea verticalmente il testo e l'immagine */
-    margin-bottom: 1px; /* Aggiunge spazio tra gli elementi della lista */
+    display: flex; /* Allinea il contenuto orizzontalmente */
+    align-items: center; /* Centra verticalmente il contenuto */
+    margin-bottom: 20px; /* Spazio sotto ogni elemento */
+    background-color: #f9f9f9; /* Colore di sfondo degli elementi */
+    padding: 10px; /* Spazio interno degli elementi */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
 }
-#ridim-immagini li {
-    display: flex; /* Usa flexbox per allineare testo e immagine */
-    align-items: center; /* Allinea verticalmente il testo e l'immagine */
-    justify-content: space-between; /* Distribuisce spazio tra testo e immagine */
-    margin-bottom: 1px; /* Spazio tra gli elementi della lista */
+
+#ridim-immagini span {
+    flex: 1; /* Occupa lo spazio disponibile */
+    margin-right: 20px; /* Spazio tra il testo e l'immagine */
+    font-size: 1em; /* Dimensione del font */
 }
 
 #ridim-immagini img {
-    max-width: 150px; /* Limita la larghezza delle immagini */
+    max-width: 120px; /* Larghezza massima delle immagini */
     height: auto; /* Mantiene le proporzioni */
-    margin-left: 450px; /* Spazio tra immagine e testo */
+    border-radius: 5px; /* Angoli arrotondati */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
+}
+
+.section-title {
+    font-size: 1.8em; /* Dimensione del font del titolo */
+    color: #1976d2; /* Colore del testo */
+    margin-top: 30px; /* Spazio sopra il titolo */
+    margin-bottom: 15px; /* Spazio sotto il titolo */
+    text-align: center; /* Centra il titolo */
+    border-bottom: 2px solid #1976d2; /* Linea sotto il titolo */
+    padding-bottom: 1px; /* Spazio sotto il testo del titolo */
+}
+
+.gallery-images {
+    display: flex; /* Allinea le immagini in fila */
+    justify-content: center; /* Centra le immagini orizzontalmente */
+    gap: 20px; /* Spazio tra le immagini */
+    margin-top: 20px; /* Spazio sopra le immagini */
+}
+
+.gallery-images img {
+    max-width: 200px; /* Larghezza massima delle immagini */
+    height: auto; /* Mantiene le proporzioni */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura leggera */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+}
+
+h2.section-title {
+    margin-top: 40px; /* Spazio sopra il titolo */
+}
+
+p strong {
+    color: #1e88e5; /* Colore del testo in grassetto */
 }
