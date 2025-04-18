@@ -8,14 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="main-title">Il nostro progetto con Arduino</h1>
+        <h1 id="descrizione" class="main-title">Il nostro progetto con Arduino</h1>
+        <header class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#descrizione">Descrizione</a></li>
+                    <li><a href="#componenti">Componenti</a></li>
+                    <li><a href="#applicazioni">Applicazioni</a></li>
+                    <li><a href="#galleria">Galleria</a></li>
+                </ul>
+            </nav>
+        </header>
         <p><strong>Nome del progetto:</strong> Radar con effetto in avvicinamento</p>
-        <p><strong>Descrizione:</strong>Partendo dalla condizione che se la luce è troppo alta il radar resta spento, se parte, muovendosi a destra e sinistra se niente è rilevato mantiene un LED di segnalazione verde,
-            può rilevare un oggetto a distanza variabile e viene segnalato con lo spegnimento del LED verde e l'accensione di uno rosso.
-            quando lo rileva a una distanza determinata, avvia un conto alla rovescia finché l'oggetto è rilevato a quella distanza determinata
-            e il LED rosso inizia a lampeggiare lentamente, velocizzando il lampeggiamento e si sincronizza ad esso l'effetto sonoro per segnalare un allarme.
-            Alla fine del conto, attiva la ventola.</p>
-        <p><strong>Componenti utilizzati:</strong></p>
+        <p><strong>Descrizione:</strong> Il radar, quando la luce è troppo alta, rimane spento. Una volta attivato, si muove a destra e sinistra:
+        se non rileva nulla, mantiene acceso un LED verde di segnalazione. Quando rileva un oggetto a una distanza variabile, spegne il LED verde e accende un LED rosso. 
+        Se l'oggetto viene rilevato a una distanza specifica, avvia un conto alla rovescia durante il quale il LED rosso lampeggia lentamente, 
+        aumentando la velocità del lampeggiamento man mano che il conto alla rovescia procede. In parallelo, un effetto sonoro sincronizzato segnala l'allarme.
+        Al termine del conto alla rovescia, il radar attiva una ventola.</p>
+        <h2 id="componenti" class="section-title">Componenti utilizzati</h2>
         <ul id="ridim-immagini" class="left-align">
             <li>
                 <span>Arduino Uno - <em> Microcontrollore principale del progetto</em></span>
@@ -62,14 +72,18 @@
             <p id="ristringimento-fasi">Sincronizzando il funzionamento dei componenti siamo stati in grado di averne il prototipo</p>
         </ul>
         <div class="gallery">
-            <h2 class="section-title">Galleria immagini</h2>
+            <h2 id="galleria" class="section-title">Galleria immagini</h2>
             <div class="gallery-images">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" alt="Arduino Uno">
             </div>
         </div>
-        <h2 class="section-title">Il nostro gruppo</h2>
-            <p><strong>Alessandro Bellini</strong> - Ruolo: Idealizzatore del progetto fisico e logico</p>
-            <p><strong>Federico Nadalini</strong> - Ruolo: Realizzatore del sito</p>
+        <h2 id="applicazioni" class="section-title">Applicazioni pratiche del progetto</h2>
+            <p>Il radar sviluppato può essere utilizzato in diversi contesti pratici, tra cui:</p>
+            <ul>
+                <li><strong>Sistemi di sicurezza:</strong> Rilevamento di intrusi o oggetti in movimento in aree protette.</li>
+                <li><strong>Automazione industriale:</strong> Monitoraggio della distanza tra macchinari o oggetti in movimento.</li>
+                <li><strong>Controllo ambientale:</strong> Attivazione di ventole o altri dispositivi in base alla presenza di oggetti o condizioni specifiche.</li>
+            </ul>
     </div>
 </body>
 </html>
