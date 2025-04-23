@@ -96,10 +96,6 @@ ul li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombreggiatura leggera */
 }
 
-.gallery img:hover {
-    transform: scale(1.1); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
-}
-
 h2.section-title {
     margin-top: 40px; /* Spazio sopra il titolo */
 }
