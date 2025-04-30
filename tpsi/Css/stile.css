@@ -103,3 +103,6 @@ h2.section-title {
 p strong {
     color: #1e88e5; /* Colore del testo in grassetto */
 }
+p {
+    font-size: 19px;
+}
