@@ -16,16 +16,16 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura leggera */
 }
 .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    list-style: none;/*Rimuove i puntini della lista*/
+    display: flex;/*Applica Flexbox per disporre gli elementi della lista in riga*/
+    justify-content: center;/*Centra gli elementi al centro orizzontalmente*/
+    margin: 0;/*Elimina il marigne esterno della lista*/
+    padding: 0;/*Elimina il padding interno della lista*/
     gap: 20px;/* Aggiunge spazio uniforme tra gli elementi della lista */
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 15px;/*Aggiunge un margine orizzontale di 15px, nessun margine verticale*/
 }
 
 .main-title {
@@ -104,5 +104,5 @@ p strong {
     color: #1e88e5; /* Colore del testo in grassetto */
 }
 p {
-    font-size: 19px;
+    font-size: 19px;/*Imposta la dimensione del testo dei paragrafi a 19px*/
 }
