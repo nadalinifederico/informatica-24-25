@@ -106,3 +106,15 @@ p strong {
 p {
     font-size: 19px;/*Imposta la dimensione del testo dei paragrafi a 19px*/
 }
+.foto-progetto {
+    max-width: 450px;   /* Imposta la larghezza massima dell'immagine a 450px */
+    width: 100%;        /* Rende l'immagine responsiva, occupando tutta la larghezza disponibile */
+    border-radius: 12px; /* Arrotonda gli angoli dell'immagine */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18); /* Applica un'ombreggiatura per dare profondità */
+    margin: 10px;       /* Aggiunge uno spazio di 10px attorno all'immagine */
+    transition: transform 0.3s; /* Anima la trasformazione (zoom) in 0.3 secondi */
+}
+
+.foto-progetto:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine quando ci passi sopra col mouse */
+}
