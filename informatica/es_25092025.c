@@ -15,7 +15,6 @@ int* alloca_array(int n) {
     }
     return arr;
 }
-
 void inserisci_valori(int* arr, int n) {
     printf("Inserisci i valori dell'array:\n");
     for (int i=0; i<n; i++) {
@@ -23,7 +22,6 @@ void inserisci_valori(int* arr, int n) {
         scanf("%d", &arr[i]);
     }
 }
-
 void stampa_array(int* arr, int n) {
     printf("L'array inserito e':\n");
     for (int i=0; i<n; i++) {
@@ -31,7 +29,6 @@ void stampa_array(int* arr, int n) {
     }
     printf("\n");
 }
-
 int somma_multipli_3(int* arr, int n) {
     int somma=0;
     for (int i=0; i<n; i++) {
@@ -41,7 +38,6 @@ int somma_multipli_3(int* arr, int n) {
     }
     return somma;
 }
-
 int conta_dispari(int* arr, int n) {
     int conta=0;
     for (int i=0; i<n; i++) {
@@ -67,7 +63,9 @@ int* crea_array_dispari(int* arr, int n, int* n_dispari) {
 }
 
 int main() {
-    int *array=NULL, n;
+    int *array=NULL, n, somma;
+    int *array_dispari=NULL;
+    int n_dispari;
     printf("Inserisci il numero di elementi dell'array: ");
     scanf("%d", &n);
 
@@ -75,11 +73,10 @@ int main() {
     inserisci_valori(array, n);
     stampa_array(array, n);
 
-    int somma=somma_multipli_3(array, n);
+    somma=somma_multipli_3(array, n);
     printf("La somma degli elementi multipli di 3 e': %d\n", somma);
 
-    int n_dispari;
-    int* array_dispari=crea_array_dispari(array, n, &n_dispari);
+    array_dispari=crea_array_dispari(array, n, &n_dispari);
     printf("Nuovo array con soli valori dispari:\n");
     stampa_array(array_dispari, n_dispari);
 
