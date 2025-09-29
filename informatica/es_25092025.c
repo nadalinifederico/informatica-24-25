@@ -41,7 +41,9 @@ int somma_multipli_3(int* arr, int n) {
 int conta_dispari(int* arr, int n) {
     int conta=0;
     for (int i=0; i<n; i++) {
-        if (arr[i]%2!=0) conta++;
+        if (arr[i]%2!=0){
+            conta++;
+        }
     }
     return conta;
 }
